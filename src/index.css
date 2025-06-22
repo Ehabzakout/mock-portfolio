@@ -1,0 +1,68 @@
+@font-face {
+	font-family: "roboto";
+	src: url("./lib/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf");
+}
+:root {
+	box-sizing: border-box;
+	--main-color: #029aff;
+	--black-color: #02021b;
+	--blue-color: #029aff;
+	--light-blue: #9ee6fc;
+	--font-family: "roboto";
+	--text-color: white;
+	--background-color: #01012c;
+	--light-background: #01ffffe0;
+	--section-background: #131320;
+	--dark-gray-color: #3c3c3c;
+	--gray-color: #777777;
+	--light-gray: #eeeded;
+}
+::after,
+::before {
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(250, 246, 246);
+	font-family: "roboto";
+	height: 5000px;
+}
+body:where(.dark, .dark *) {
+	background-color: var(--black-color);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+.layout {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
+.container {
+	padding: 0px 15px;
+}
+
+@media (min-width: 700px) {
+	.layout {
+		padding-top: 220px;
+	}
+	.container {
+		padding: 0px 50px;
+	}
+}
+
+.slideIn {
+	animation: slideIn 0.8s ease-in-out 1 forwards;
+}
+@keyframes slideIn {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}

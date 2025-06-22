@@ -1,0 +1,5 @@
+.type {
+	color: var(--main-color);
+	width: fit-content;
+	font-weight: 600;
+}

@@ -1,0 +1,53 @@
+.skills {
+	h1 {
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 30px;
+		color: var(--text-color);
+		font-weight: 900;
+		span {
+			color: var(--main-color);
+		}
+	}
+}
+
+.skills div {
+	display: flex;
+
+	flex-direction: column;
+	justify-content: start;
+	color: var(--text-color);
+	margin: 10px 0px;
+	h3 {
+		width: 120px;
+		margin-left: 20px;
+	}
+	div {
+		background-color: var(--light-gray);
+		width: 80%;
+		height: 25px;
+		border-radius: calc(infinity * 1px);
+		overflow: hidden;
+		position: relative;
+		.dark & {
+			background-color: var(--section-background);
+		}
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: var(--main-color);
+			width: 0%;
+			height: 100%;
+			transition: all 0.5s ease-in-out;
+		}
+	}
+
+	@media (min-width: 700px) {
+		& {
+			gap: 30px;
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+}

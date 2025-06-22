@@ -1,0 +1,40 @@
+.logo {
+	font-size: 18px;
+	position: relative;
+	width: fit-content;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: auto;
+	font-weight: 700;
+	color: var(--text-color);
+}
+
+.logo::before {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: var(--main-color);
+	border-radius: 50%;
+	position: absolute;
+	left: 110%;
+	bottom: 15%;
+}
+
+.logo:hover::before {
+	animation: bounce 0.5s linear alternate infinite;
+}
+@keyframes bounce {
+	0% {
+		bottom: 10%;
+	}
+
+	100% {
+		bottom: 70%;
+	}
+}
+@media (min-width: 700px) {
+	.logo {
+		font-size: 20px;
+	}
+}

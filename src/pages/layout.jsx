@@ -7,6 +7,7 @@ import Education from "./education/education.jsx";
 import Home from "./home/home.jsx";
 import Projects from "./projects/projects.jsx";
 import Skills from "./skills/skills.jsx";
+import Testimonials from "./testimonials/testimonials.jsx";
 
 export default function Layout() {
 	return (
@@ -20,6 +21,7 @@ export default function Layout() {
 					<Skills />
 					<Education />
 					<Projects />
+					<Testimonials />
 				</div>
 			</div>
 		</ThemeProvider>

@@ -39,10 +39,10 @@
 }
 
 .navBackground.animate {
-	animation: puls 3s linear 1 alternate forwards;
+	animation: puls 2s linear 1 alternate forwards;
 }
 .navBackground.animate:where(.dark, .dark *) {
-	animation: puls-2 3s linear 1 alternate forwards;
+	animation: puls-2 2s linear 1 alternate forwards;
 }
 
 @keyframes puls {

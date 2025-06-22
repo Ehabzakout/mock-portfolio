@@ -15,7 +15,7 @@ const projects = [
 		img: project1,
 		title: "Web Development",
 		description:
-			" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quasi.",
+			" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quasi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eaque quos veritatis distinctio, maxime, dolore unde quidem laboriosam est asperiores quas vitae recusandae nam quisquam similique nesciunt, placeat dolores. Nemo.",
 		href: "https://google.com",
 	},
 	{
@@ -29,7 +29,7 @@ const projects = [
 		img: project3,
 		title: "Web Development",
 		description:
-			" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quasi.",
+			" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quasi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eaque quos veritatis distinctio, maxime, dolore unde quidem laboriosam est asperiores quas vitae recusandae nam quisquam similique nesciunt, placeat dolores. Nemo.",
 		href: "https://google.com",
 	},
 	{

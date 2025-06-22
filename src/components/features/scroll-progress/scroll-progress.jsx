@@ -23,7 +23,7 @@ export default function ScrollProgressBar() {
 				top: 0,
 				left: 0,
 				width: `${scrollPer}%`,
-				height: "5px",
+				height: "6px",
 				backgroundImage:
 					"linear-gradient(to right, var(--main-color), var(--light-background))",
 

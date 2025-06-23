@@ -147,7 +147,3 @@
 	gap: 30px;
 	cursor: pointer;
 }
-.navIcons .themeIcon {
-	font-size: x-large;
-	color: var(--text-color);
-}

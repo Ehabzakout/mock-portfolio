@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import Styles from "../common/navbar/navbar.module.css";
+import Styles from "../layout/navbar/navbar.module.css";
 
 export const themeContext = createContext("");
 

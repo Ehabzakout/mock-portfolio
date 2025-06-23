@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function useActiveLink(sections) {
 	const [activeLink, setActiveLink] = useState("home");
 
 	useEffect(() => {
 		let currentSection = sections[0];
+
 		function handleScroll() {
 			for (let { href } of sections) {
 				const section = document.getElementById(href);
@@ -16,7 +16,9 @@ export default function useActiveLink(sections) {
 						currentSection = href;
 					}
 				}
+				if (window.scrollY > 3500) currentSection = null;
 			}
+
 			setActiveLink(currentSection);
 		}
 		window.addEventListener("scroll", handleScroll);

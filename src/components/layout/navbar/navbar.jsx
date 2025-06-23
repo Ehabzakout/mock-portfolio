@@ -1,16 +1,15 @@
-import { useContext, useEffect, useState } from "react";
-import Logo from "../logo/logo";
 import Styles from "./navbar.module.css";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import MobileMenu from "../../features/mobile-menu/mobile-menu.jsx";
-import { IoSunnyOutline } from "react-icons/io5";
-import { FiMoon } from "react-icons/fi";
-import { themeContext } from "../../providers/theme.provider.jsx";
 import useActiveLink from "../../../hooks/useActiveLink.js";
+import { useContext, useEffect, useState } from "react";
+import { themeContext } from "../../providers/theme.provider.jsx";
+import Logo from "../../common/logo/logo.jsx";
+import ThemeToggle from "./components/theme-toggle/theme-toggle.jsx";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import MobileMenu from "./components/mobile-menu/mobile-menu.jsx";
 
 export default function Navbar() {
 	const [visible, setVisible] = useState(true);
-	const { changeTheme, theme } = useContext(themeContext);
+	const { changeTheme } = useContext(themeContext);
 
 	useEffect(() => {
 		const theme = localStorage.getItem("theme");
@@ -71,17 +70,7 @@ export default function Navbar() {
 					})}
 				</ul>
 				<div className={`${Styles.navIcons}`}>
-					{theme === "dark" ? (
-						<IoSunnyOutline
-							className={`${Styles.themeIcon}`}
-							onClick={() => changeTheme("light")}
-						/>
-					) : (
-						<FiMoon
-							className={`${Styles.themeIcon}`}
-							onClick={() => changeTheme("dark")}
-						/>
-					)}
+					<ThemeToggle />
 					<MobileMenu links={links} handleClick={handleClick} />
 					<div className={Styles.contact}>
 						<a onClick={() => handleClick("contact")}>Contact me</a>

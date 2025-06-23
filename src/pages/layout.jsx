@@ -1,8 +1,9 @@
-import Navbar from "../components/common/navbar/navbar.jsx";
 import ScrollProgressBar from "../components/features/scroll-progress/scroll-progress.jsx";
-import TypewriterDemo from "../components/features/typewriter/typewriter.jsx";
+import Footer from "../components/layout/footer/footer.jsx";
+import Navbar from "../components/layout/navbar/navbar.jsx";
 import ThemeProvider from "../components/providers/theme.provider.jsx";
 import About from "./about/about.jsx";
+import ContactMe from "./contact/contact-me.jsx";
 import Education from "./education/education.jsx";
 import Home from "./home/home.jsx";
 import Projects from "./projects/projects.jsx";
@@ -22,6 +23,8 @@ export default function Layout() {
 					<Education />
 					<Projects />
 					<Testimonials />
+					<ContactMe />
+					<Footer />
 				</div>
 			</div>
 		</ThemeProvider>

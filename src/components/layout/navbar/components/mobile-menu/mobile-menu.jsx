@@ -2,7 +2,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import Styles from "./mobile-menu.module.css";
 import { useContext, useEffect, useRef } from "react";
-import { themeContext } from "../../providers/theme.provider";
+import { themeContext } from "../../../../providers/theme.provider";
 
 export default function MobileMenu({ links, handleClick }) {
 	const menuRef = useRef(null);

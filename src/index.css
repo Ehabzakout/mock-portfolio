@@ -24,7 +24,6 @@
 body {
 	background-color: rgb(250, 246, 246);
 	font-family: "roboto";
-	height: 5000px;
 }
 body:where(.dark, .dark *) {
 	background-color: var(--black-color);

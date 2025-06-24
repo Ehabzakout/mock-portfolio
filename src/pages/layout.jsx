@@ -1,3 +1,4 @@
+import TopButton from "../components/features/go-to-top/top-button.jsx";
 import ScrollProgressBar from "../components/features/scroll-progress/scroll-progress.jsx";
 import Footer from "../components/layout/footer/footer.jsx";
 import Navbar from "../components/layout/navbar/navbar.jsx";
@@ -25,6 +26,7 @@ export default function Layout() {
 					<Testimonials />
 					<ContactMe />
 					<Footer />
+					<TopButton />
 				</div>
 			</div>
 		</ThemeProvider>

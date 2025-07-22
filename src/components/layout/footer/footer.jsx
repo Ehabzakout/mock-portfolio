@@ -14,7 +14,7 @@ export default function Footer() {
 			className={`${Styles.footer} ${theme === "dark" ? Styles.dark : ""}`}
 		>
 			<p>Copyright &copy; {year}</p>
-			<h4>Ramzy Zakout</h4>
+			<h4>Your Name</h4>
 			<div>
 				<a href="http://github.com" target="_blank">
 					<FaGithub />

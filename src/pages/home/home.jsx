@@ -16,7 +16,7 @@ export default function Home() {
 					<h3>Hello It's Me</h3>
 					<img src={handImg} />
 				</div>
-				<h1>Ramzy Zakout</h1>
+				<h1>Your Name</h1>
 				<div>
 					<p>And I'm a</p>
 					<TypewriterDemo />

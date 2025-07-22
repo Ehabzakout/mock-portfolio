@@ -3,7 +3,7 @@ export default function Logo() {
 	return (
 		<div>
 			<a href="#home" className={`${Styles.logo}`}>
-				Ramzy Zakout
+				Your Name
 			</a>
 		</div>
 	);
